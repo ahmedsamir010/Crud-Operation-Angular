@@ -1,0 +1,38 @@
+/* Styling for Confirm Deletion Dialog */
+.dialog-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .dialog-content {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  .dialog-actions {
+    margin-top: 20px;
+  }
+  
+  .cancel-button {
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 1px solid #ccc;
+    padding: 8px 20px;
+    border-radius: 4px;
+  }
+  
+  .delete-button {
+    color: #fff;
+    background-color: #e53935;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 8px 20px;
+    border-radius: 4px;
+  }
+  
+  .delete-button:hover {
+    background-color: #c62828;
+  }
+  

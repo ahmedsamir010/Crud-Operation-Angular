@@ -1,0 +1,82 @@
+/* Styling for Task Details section */
+.single-task {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Task Heading */
+.task-heading {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Task Details Container */
+.task-details {
+  display: flex;
+  align-items: center;
+}
+
+/* Task Info */
+.task-info {
+  flex: 1;
+  padding-right: 20px;
+}
+
+/* Task Title */
+.task-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Task Content */
+.task-content {
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.5;
+}
+
+/* Task Image Container */
+.task-image-container {
+  flex: 1;
+  text-align: center;
+}
+
+/* Task Image */
+.task-image {
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Update and Delete Buttons */
+.update-button,
+.delete-button {
+  margin: 0 10px;
+}
+
+/* Styling for hover effect on update and delete buttons */
+.update-button,
+.delete-button {
+  transition: background-color 0.4s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.update-button:hover,
+.delete-button:hover {
+  background-color: #f0f0f0;
+  color: #333;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}

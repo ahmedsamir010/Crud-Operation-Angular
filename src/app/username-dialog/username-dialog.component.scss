@@ -1,0 +1,45 @@
+.dialog-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 16px;
+  }
+  
+  .username-field {
+    width: 100%;
+  }
+  
+  .dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 16px;
+  }
+  
+  .cancel-button {
+    color: #757575;
+    font-weight: bold;
+    margin-right: 16px;
+  }
+  
+  .submit-button {
+    background-color: #1976d2;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .submit-button:disabled {
+    background-color: #c5c5c5;
+    cursor: not-allowed;
+  }
+  
+  .submit-button:hover:enabled {
+    background-color: #1565c0;
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  

@@ -1,0 +1,44 @@
+/* Import fonts from Google Fonts or other sources */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
+
+/* Set the primary font family */
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: rgb(59, 12, 100);
+}
+
+/* Define common font sizes and colors */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Define button styles */
+.button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+/* styles.scss */
+.success-snackbar {
+  background-color: #4caf50; /* Green color for success */
+  color: #fff;
+  font-size: 14px;
+}
+
+/* Add more global styles as needed */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

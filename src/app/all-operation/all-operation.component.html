@@ -1,0 +1,45 @@
+<div class="create-update-delete">
+  <div class="create-task">
+    <h2 class="task-heading">Create Task</h2>
+    <form (ngSubmit)="onSubmit()" class="task-form" #taskForm="ngForm">
+      <mat-form-field class="task-input">
+        <mat-label>Title:</mat-label>
+        <input matInput type="text" id="title" [(ngModel)]="title" name="title" required minlength="3" maxlength="100">
+        <mat-error *ngIf="taskForm.controls['title']?.invalid && (taskForm.controls['title']?.dirty || taskForm.submitted)">
+          Title is required (min length: 3).
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="task-input">
+        <mat-label>Content:</mat-label>
+        <textarea matInput id="content" [(ngModel)]="content" name="content" required minlength="10" maxlength="255"></textarea>
+        <mat-error *ngIf="taskForm.controls['content']?.invalid && (taskForm.controls['content']?.dirty || taskForm.submitted)">
+          Content is required (min length: 10).
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="task-input">
+        <mat-label>Username:</mat-label>
+        <input matInput type="text" id="username" [(ngModel)]="username" name="username" required minlength="3" maxlength="100">
+        <mat-error *ngIf="taskForm.controls['username']?.invalid && (taskForm.controls['username']?.dirty || taskForm.submitted)">
+          Username is required (min length: 3).
+        </mat-error>
+      </mat-form-field>
+
+      <div class="file-input">
+        <label class="image-button" for="image">
+          <mat-icon>cloud_upload</mat-icon> Choose Image
+        </label>
+        <input type="file" id="image" (change)="onImageChange($event)" accept="image/*" style="display: none;">
+      </div>
+      
+      <button mat-raised-button color="accent" class="submit-button" type="submit">Create Task</button>
+    </form>
+  </div>
+  
+  <div class="action-buttons">
+    <button mat-raised-button color="primary" class="show-all-button" (click)="openUsernameDialog()">
+      <mat-icon>view_list</mat-icon> Show All Tasks
+    </button>
+  </div>
+</div>

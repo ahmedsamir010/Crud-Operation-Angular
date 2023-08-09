@@ -1,0 +1,23 @@
+<div class="single-task">
+  <h2 class="task-heading">Task Details</h2>
+  <div class="task-details">
+    <div class="task-info">
+      <h3 class="task-title">{{ task?.title }}</h3>
+      <p class="task-content">{{ task?.content }}</p>
+    </div>
+    <div class="task-image-container">
+      <img [src]="'https://task.ecmpp.com/storage/' + (task?.image || '').replace('public/', '')"
+           alt="Task Image" class="task-image">
+    </div>
+  </div>
+</div>
+
+<div class="button-container">
+  <button mat-raised-button color="primary" class="update-button" (click)="openUpdateDialog()">
+    <mat-icon>edit</mat-icon> Update Task
+  </button>
+
+  <button mat-raised-button color="warn" class="delete-button" (click)="openDeleteDialog()">
+    <mat-icon>delete</mat-icon> Delete Task
+  </button>
+</div>

@@ -1,0 +1,17 @@
+<div class="all-tasks">
+  <h2 class="task-heading">All Tasks for {{ username }}</h2>
+
+  <!-- Check if there are tasks -->
+  <ng-container *ngIf="tasks.length > 0; else noTasks">
+    <mat-list class="task-list">
+      <mat-list-item *ngFor="let task of tasks" class="task-item">
+        <a [routerLink]="['/single', task.id]" class="task-link">{{ task.title }}</a>
+      </mat-list-item>
+    </mat-list>
+  </ng-container>
+
+  <!-- No tasks message -->
+  <ng-template #noTasks>
+    <p class="no-tasks-message">No tasks available for {{ username }}</p>
+  </ng-template>
+</div>

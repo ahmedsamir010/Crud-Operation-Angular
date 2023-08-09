@@ -1,0 +1,10 @@
+<h2 mat-dialog-title class="dialog-title">Enter Username</h2>
+<mat-dialog-content>
+  <mat-form-field class="username-field">
+    <input matInput type="text" [(ngModel)]="modalUsername" name="modalUsername" required minlength="3" maxlength="100" placeholder="Your Username">
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions class="dialog-actions">
+  <button mat-button class="cancel-button" (click)="onCloseDialog()">Cancel</button>
+  <button mat-button class="submit-button" [mat-dialog-close]="modalUsername" [disabled]="!modalUsername">Submit</button>
+</mat-dialog-actions>

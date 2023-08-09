@@ -1,0 +1,12 @@
+<div class="task-id-dialog">
+    <h2 class="dialog-heading">Enter Task ID</h2>
+    <mat-form-field class="task-id-input">
+      <mat-label>Task ID:</mat-label>
+      <input matInput type="text" [(ngModel)]="taskId" name="taskId" required>
+    </mat-form-field>
+    <div class="dialog-actions">
+      <button mat-button class="cancel-button" (click)="closeDialog()">Cancel</button>
+      <button mat-raised-button color="primary" [mat-dialog-close]="taskId" [disabled]="!taskId">Submit</button>
+    </div>
+  </div>
+  

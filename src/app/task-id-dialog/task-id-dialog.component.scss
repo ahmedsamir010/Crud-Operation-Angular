@@ -1,0 +1,33 @@
+.task-id-dialog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .dialog-heading {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .task-id-input {
+    width: 100%;
+  }
+  
+  .dialog-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .cancel-button {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  
+  .mat-raised-button {
+    min-width: 100px;
+  }
+  

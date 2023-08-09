@@ -1,0 +1,40 @@
+.all-tasks {
+  text-align: center;
+  padding: 20px;
+}
+
+.task-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  margin-bottom: 10px;
+}
+h2{
+  color: aliceblue;
+}
+
+.task-link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.task-link:hover {
+  color: #0056b3;
+}
+
+.no-tasks-message {
+  font-size: 18px;
+  color: #777;
+  margin-top: 20px;
+}
